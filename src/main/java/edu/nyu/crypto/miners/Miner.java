@@ -49,13 +49,13 @@ public interface Miner {
 
     /**
      *
-     * @param setHashRate sets the hash rate of the Miner
+     * @param hashRate sets the hash rate of the Miner
      */
     void setHashRate(int hashRate);
 
     /**
     *
-    * @param resethashRate resets the hash rate of the Miner to its base value
+    * Resets the hash rate of the Miner to its base value
     */
     void resetHashRate();
 

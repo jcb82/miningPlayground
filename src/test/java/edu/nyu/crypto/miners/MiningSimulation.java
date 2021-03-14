@@ -54,7 +54,6 @@ public class MiningSimulation {
         runSimulation(miners, BlockReward.ONE, churn);
     }
 
-    //TODO: Uncomment this part when testing your miners.
     @Test
     public void simulate51PercentAttack1() {
         LOGGER.info("Simulating 55% attacker, low churn network");
@@ -87,8 +86,6 @@ public class MiningSimulation {
     
     @Test
     public void simulateSelfishMining1() {
-        // 34 out of 94 hash rate
-    	
         LOGGER.info("Simulating selfish miner at 40%, no churn");
 
         List<Miner> miners = makeCompliantMiners(ImmutableList.of(15, 15, 10, 10, 10));
@@ -136,7 +133,7 @@ public class MiningSimulation {
     @Test
     public void simulateFeeSniping2() {
     	
-        LOGGER.info("Simulating fee sniping miner at 30%, with churn");
+        LOGGER.info("Simulating fee sniping miner at 29%, with churn");
     	
         List<Miner> miners = makeCompliantMiners(ImmutableList.of(220, 190, 150, 130, 20));
         

@@ -105,7 +105,7 @@ public class MiningSimulation {
 
         List<Miner> miners = makeCompliantMiners(ImmutableList.of(150, 150, 100, 100, 100));
 
-    	Miner attacker = new SelfishMiner("Attacker", 270, 20);
+    	Miner attacker = new SelfishMiner("Attacker", 270, 60);
         miners.add(attacker);
 
         ChurnFunction churn = new NormalChurnFunction(1, 1, new SimulationRandom(3456));

@@ -34,6 +34,8 @@ public interface Miner {
     void networkUpdate(NetworkStatistics statistics);
 
     /**
+     * Initialize the miner with some genesis block and the initial network statistics.
+     * The internal state of the miner must be completely reset by this function.
      * @param genesis The genesis block
      * @param statistics The original NetworkStatistics
      */
@@ -59,7 +61,7 @@ public interface Miner {
     */
     void resetHashRate();
 
-    
+
     /**
      * @return the inverse of the average ping time
      */
@@ -70,12 +72,12 @@ public interface Miner {
      * @param connectivity
      */
     void setConnectivity(int connectivity);
-    
+
     /**
      * Resets the connectivity of the Miner to its original value
      */
     void resetConnectivity();
-    
+
     /**
      * @return The miners Id
      */
